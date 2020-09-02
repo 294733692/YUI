@@ -1,17 +1,17 @@
 import React from 'react';
+import Button, {ButtonSize, ButtonType} from "./components/Button/button";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>hello world</h1>
-        <h2>hello world</h2>
-        <h3>hello world</h3>
-        <h4>hello world</h4>
-        <h5>hello world</h5>
-        <h6>hello world</h6>
-        <hr/>
-        <code>const a = '123'</code>
+        <Button className="userClass" onClick={(e) => {e.preventDefault()}}>hello world</Button>
+        <Button btnType={ButtonType.Primary} disabled>disabled Primary</Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>hello world</Button>
+        <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>Small Danger</Button>
+        <Button btnType={ButtonType.Link} size={ButtonSize.Small} disabled>Disabled Link</Button>
+        <Button btnType={ButtonType.Link} size={ButtonSize.Small} target='_blank' href='https://www.baidu.com'>Baidu
+          Link</Button>
       </header>
     </div>
   );
