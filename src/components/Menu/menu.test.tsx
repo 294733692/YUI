@@ -63,5 +63,3 @@ describe('test Menu and MenuItem components', () => {
     expect(menuElement).toHaveClass("menu-vertical")
   })
 })
-
-
